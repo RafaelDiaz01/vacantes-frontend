@@ -1,0 +1,370 @@
+/* Import Plus Jakarta Sans from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+  /* -------------------------------------------------------
+     1. BRAND COLORS
+     ------------------------------------------------------- */
+
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-active: #1e40af;
+  --color-primary-light: #eff6ff;
+  --color-primary-subtle: #dbeafe;
+  --color-primary-dark: #004ac6;
+  --color-primary-contrast: #ffffff;
+
+  /* -------------------------------------------------------
+     2. TEXT COLORS
+     ------------------------------------------------------- */
+
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #1e293b;
+  --color-text-tertiary: #475569;
+  --color-text-muted: #64748b;
+  --color-text-placeholder: #94a3b8;
+  --color-text-disabled: #94a3b8;
+  --color-text-inverse: #ffffff;
+
+  /* -------------------------------------------------------
+     3. BACKGROUND COLORS
+     ------------------------------------------------------- */
+
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-subtle: #f1f5f9;
+  --color-surface-muted: #e2e8f0;
+  --color-surface-hover: #f8fafc;
+  --color-surface-active: #eff6ff;
+  --color-surface-disabled: #f1f5f9;
+  --color-surface-dark: #0f172a;
+
+  /* -------------------------------------------------------
+     4. BORDER COLORS
+     ------------------------------------------------------- */
+
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+  --color-border-hover: #94a3b8;
+  --color-border-focus: #2563eb;
+  --color-border-error: #dc2626;
+  --color-border-success: #059669;
+
+  /* -------------------------------------------------------
+     5. SEMANTIC COLORS
+     ------------------------------------------------------- */
+
+  /* Success and active states */
+  --color-success: #059669;
+  --color-success-light: #ecfdf5;
+  --color-success-hover: #047857;
+  --color-success-border: #a7f3d0;
+
+  /* Information states */
+  --color-info: #2563eb;
+  --color-info-light: #eff6ff;
+  --color-info-border: #bfdbfe;
+
+  /* Warning and pending states */
+  --color-warning: #d97706;
+  --color-warning-light: #fffbeb;
+  --color-warning-border: #fde68a;
+
+  /* Error and destructive states */
+  --color-error: #dc2626;
+  --color-error-light: #fef2f2;
+  --color-error-hover: #b91c1c;
+  --color-error-border: #fca5a5;
+
+  /* Neutral and inactive states */
+  --color-neutral: #64748b;
+  --color-neutral-light: #f1f5f9;
+  --color-neutral-border: #cbd5e1;
+
+  /* -------------------------------------------------------
+     6. TYPOGRAPHY
+     ------------------------------------------------------- */
+
+  /* Font family */
+  --font-family-base: "Plus Jakarta Sans", sans-serif;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Display typography */
+  --font-size-display-lg: 3rem;
+  --line-height-display-lg: 3.5rem;
+  --letter-spacing-display-lg: -0.02em;
+
+  /* Headline typography */
+  --font-size-headline-xl: 2.25rem;
+  --line-height-headline-xl: 2.75rem;
+  --letter-spacing-headline-xl: -0.02em;
+
+  --font-size-headline-lg: 1.75rem;
+  --line-height-headline-lg: 2.25rem;
+  --letter-spacing-headline-lg: -0.015em;
+
+  --font-size-headline-md: 1.375rem;
+  --line-height-headline-md: 1.875rem;
+  --letter-spacing-headline-md: -0.01em;
+
+  --font-size-headline-sm: 1.125rem;
+  --line-height-headline-sm: 1.625rem;
+  --letter-spacing-headline-sm: -0.005em;
+
+  /* Title typography */
+  --font-size-title-md: 1rem;
+  --line-height-title-md: 1.5rem;
+  --letter-spacing-title-md: 0;
+
+  /* Body typography */
+  --font-size-body-lg: 1.125rem;
+  --line-height-body-lg: 1.75rem;
+  --letter-spacing-body-lg: -0.005em;
+
+  --font-size-body-md: 0.9375rem;
+  --line-height-body-md: 1.5rem;
+  --letter-spacing-body-md: 0;
+
+  --font-size-body-sm: 0.8125rem;
+  --line-height-body-sm: 1.25rem;
+  --letter-spacing-body-sm: 0;
+
+  /* Label typography */
+  --font-size-label-md: 0.875rem;
+  --line-height-label-md: 1.25rem;
+  --letter-spacing-label-md: 0.01em;
+
+  --font-size-label-sm: 0.75rem;
+  --line-height-label-sm: 1rem;
+  --letter-spacing-label-sm: 0.02em;
+
+  /* Caption typography */
+  --font-size-caption: 0.6875rem;
+  --line-height-caption: 0.875rem;
+  --letter-spacing-caption: 0.03em;
+
+  /* -------------------------------------------------------
+     7. SPACING
+     ------------------------------------------------------- */
+
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  --spacing-24: 6rem;
+
+  /* Component spacing */
+  --spacing-component-xs: 0.25rem;
+  --spacing-component-sm: 0.5rem;
+  --spacing-component-md: 1rem;
+  --spacing-component-lg: 1.5rem;
+  --spacing-component-xl: 2.5rem;
+
+  /* Layout spacing */
+  --layout-gutter: 1.5rem;
+  --layout-margin: 2rem;
+  --layout-container-max: 1280px;
+  --layout-dashboard-max: 1440px;
+
+  /* -------------------------------------------------------
+     8. BORDER RADIUS
+     ------------------------------------------------------- */
+
+  --radius-none: 0;
+  --radius-sm: 0.25rem;
+  --radius-default: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Component-specific radius */
+  --radius-button: var(--radius-default);
+  --radius-input: var(--radius-default);
+  --radius-card: var(--radius-default);
+  --radius-modal: var(--radius-lg);
+  --radius-badge: var(--radius-full);
+
+  /* -------------------------------------------------------
+     9. BORDERS
+     ------------------------------------------------------- */
+
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-accent: 3px;
+
+  /* -------------------------------------------------------
+     10. SHADOWS AND ELEVATION
+     ------------------------------------------------------- */
+
+  --shadow-none: none;
+
+  --shadow-card: none;
+
+  --shadow-hover:
+    0 4px 12px -2px rgb(15 23 42 / 8%),
+    0 2px 6px -1px rgb(15 23 42 / 4%);
+
+  --shadow-dropdown:
+    0 10px 25px -5px rgb(15 23 42 / 10%),
+    0 8px 10px -6px rgb(15 23 42 / 6%);
+
+  --shadow-modal:
+    0 25px 50px -12px rgb(15 23 42 / 25%);
+
+  --shadow-focus:
+    0 0 0 3px rgb(37 99 235 / 15%);
+
+  --shadow-error:
+    0 0 0 3px rgb(220 38 38 / 12%);
+
+  /* -------------------------------------------------------
+     11. BUTTONS
+     ------------------------------------------------------- */
+
+  --button-height-default: 44px;
+  --button-height-compact: 36px;
+
+  --button-padding-x: 1rem;
+  --button-padding-y: 0.625rem;
+
+  --button-font-size: var(--font-size-label-md);
+  --button-font-weight: var(--font-weight-semibold);
+
+  --button-primary-bg: var(--color-primary);
+  --button-primary-hover: var(--color-primary-hover);
+  --button-primary-active: var(--color-primary-active);
+  --button-primary-text: var(--color-primary-contrast);
+
+  --button-secondary-bg: var(--color-surface);
+  --button-secondary-hover: var(--color-surface-hover);
+  --button-secondary-text: var(--color-text-primary);
+  --button-secondary-border: var(--color-border-strong);
+
+  --button-ghost-bg: transparent;
+  --button-ghost-hover: var(--color-surface-subtle);
+  --button-ghost-text: var(--color-text-muted);
+
+  --button-danger-bg: var(--color-error-light);
+  --button-danger-hover: var(--color-error);
+  --button-danger-text: var(--color-error);
+  --button-danger-hover-text: var(--color-text-inverse);
+  --button-danger-border: var(--color-error-border);
+
+  /* -------------------------------------------------------
+     12. FORM INPUTS
+     ------------------------------------------------------- */
+
+  --input-height: 44px;
+  --input-padding-x: 0.75rem;
+  --input-padding-y: 0.625rem;
+
+  --input-font-size: var(--font-size-body-md);
+  --input-font-weight: var(--font-weight-regular);
+
+  --input-bg: var(--color-surface);
+  --input-text: var(--color-text-primary);
+  --input-placeholder: var(--color-text-placeholder);
+
+  --input-border: var(--color-border-strong);
+  --input-border-hover: var(--color-border-hover);
+  --input-border-focus: var(--color-primary);
+  --input-border-error: var(--color-error);
+
+  --input-radius: var(--radius-input);
+  --input-focus-shadow: var(--shadow-focus);
+  --input-error-shadow: var(--shadow-error);
+
+  /* -------------------------------------------------------
+     13. CARDS AND LISTINGS
+     ------------------------------------------------------- */
+
+  --card-bg: var(--color-surface);
+  --card-border: var(--color-border);
+  --card-border-hover: var(--color-border-strong);
+  --card-radius: var(--radius-default);
+  --card-padding: var(--spacing-4);
+  --card-shadow: var(--shadow-card);
+  --card-shadow-hover: var(--shadow-hover);
+
+  --job-card-accent-width: 3px;
+  --job-card-accent-color: var(--color-primary);
+
+  --company-logo-size: 48px;
+  --company-logo-radius: var(--radius-default);
+
+  /* -------------------------------------------------------
+     14. STATUS BADGES AND FILTERS
+     ------------------------------------------------------- */
+
+  --badge-radius: var(--radius-full);
+  --badge-font-size: var(--font-size-label-sm);
+
+  --badge-success-bg: var(--color-success-light);
+  --badge-success-text: var(--color-success);
+
+  --badge-warning-bg: var(--color-warning-light);
+  --badge-warning-text: var(--color-warning);
+
+  --badge-error-bg: var(--color-error-light);
+  --badge-error-text: var(--color-error);
+
+  --badge-neutral-bg: var(--color-neutral-light);
+  --badge-neutral-text: var(--color-neutral);
+
+  --filter-bg: var(--color-surface);
+  --filter-bg-active: var(--color-primary-light);
+  --filter-text: var(--color-text-tertiary);
+  --filter-text-active: var(--color-primary-hover);
+  --filter-border: var(--color-border);
+  --filter-border-active: var(--color-primary);
+  --filter-radius: var(--radius-full);
+
+  /* -------------------------------------------------------
+     15. OVERLAYS
+     ------------------------------------------------------- */
+
+  --overlay-bg: rgb(15 23 42 / 45%);
+  --overlay-blur: 4px;
+
+  /* -------------------------------------------------------
+     16. TRANSITIONS
+     ------------------------------------------------------- */
+
+  --transition-fast: 150ms ease-in-out;
+  --transition-default: 200ms ease-in-out;
+  --transition-slow: 300ms ease-in-out;
+
+  /* -------------------------------------------------------
+     17. Z-INDEX
+     ------------------------------------------------------- */
+
+  --z-index-base: 0;
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1100;
+  --z-index-overlay: 1200;
+  --z-index-modal: 1300;
+  --z-index-tooltip: 1400;
+
+  /* -------------------------------------------------------
+     18. RESPONSIVE BREAKPOINT REFERENCES
+     ------------------------------------------------------- */
+
+  --breakpoint-mobile: 768px;
+  --breakpoint-tablet: 1024px;
+  --breakpoint-desktop: 1280px;
+}
