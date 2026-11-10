@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Hero from "../components/VacanciesPage/Hero.jsx";
+import JobList from "../components/VacanciesPage/JobMain/JobList.jsx";
 
 /**
  * Renders the home page and coordinates job search navigation.
@@ -28,6 +29,7 @@ function HomePage() {
     return (
         <main className="w-full">
             <Hero onSearch={handleJobSearch} />
+            <JobList />
         </main>
     );
 }
