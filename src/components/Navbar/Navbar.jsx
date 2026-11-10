@@ -49,7 +49,7 @@ function Navbar() {
                 className="
                     mx-auto flex min-h-[80px] w-full
                     items-center justify-between gap-4
-                    px-4 sm:px-6 lg:px-10
+                    px-4 sm:px-6 lg:px-[var(--layout-margin)]
                 "
             >
                 {/* Brand and primary navigation links */}
