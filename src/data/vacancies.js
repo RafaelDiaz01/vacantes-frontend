@@ -1,0 +1,68 @@
+// Reemplazar por los datos de la API cuando el backend esté listo.
+
+export const MOCK_VACANCIES = [
+  {
+    id: 1,
+    title: "Senior Frontend Engineer React / Next.js",
+    location: "remoto",
+    category: "desarrollo",
+    employmentType: "tiempo-completo",
+    salary: "$45,000 - $60,000 MXN / mes",
+  },
+  {
+    id: 2,
+    title: "Product Designer Lead (Design Systems)",
+    location: "cdmx",
+    category: "diseno",
+    employmentType: "tiempo-completo",
+    salary: "$40,000 - $52,000 MXN / mes",
+  },
+  {
+    id: 3,
+    title: "DevOps Specialist AWS & Kubernetes",
+    location: "remoto",
+    category: "devops",
+    employmentType: "tiempo-completo",
+    salary: "$50,000 - $65,000 MXN / mes",
+  },
+  {
+    id: 4,
+    title: "Data Analyst BI & Analytics",
+    location: "guadalajara",
+    category: "datos",
+    employmentType: "medio-tiempo",
+    salary: "$18,000 - $24,000 MXN / mes",
+  },
+  {
+    id: 5,
+    title: "Product Manager - Enterprise SaaS",
+    location: "monterrey",
+    category: "producto",
+    employmentType: "tiempo-completo",
+    salary: "$55,000 - $70,000 MXN / mes",
+  },
+  {
+    id: 6,
+    title: "Desarrollador Backend Node.js",
+    location: "oaxaca",
+    category: "desarrollo",
+    employmentType: "practicas",
+    salary: "$8,000 MXN / mes",
+  },
+  {
+    id: 7,
+    title: "Diseñador UI Freelance para App Móvil",
+    location: "remoto",
+    category: "diseno",
+    employmentType: "freelance",
+    salary: "$25,000 MXN por proyecto",
+  },
+  {
+    id: 8,
+    title: "Ingeniero de Datos Python",
+    location: "hibrido",
+    category: "datos",
+    employmentType: "temporal",
+    salary: "$35,000 - $42,000 MXN / mes",
+  },
+];
