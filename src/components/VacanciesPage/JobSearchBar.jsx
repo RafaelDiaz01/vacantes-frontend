@@ -11,7 +11,7 @@ import SearchIcon from "@mui/icons-material/Search";
  * @param {boolean} props.disabled - Whether the search form is disabled.
  */
 function JobSearchBar({
-    placeholder = "Ej. Frontend Engineer, React, Remoto",
+    placeholder = "Cargo, Habilidad o Palabra Clave",
     buttonText = "Buscar Empleos",
     initialValue = "",
     onSearch,
@@ -41,8 +41,8 @@ function JobSearchBar({
             role="search"
             className="
                 flex w-full flex-col gap-[var(--spacing-3)]
-                rounded-[var(--radius-xl)] border border-[var(--color-border)]
-                bg-[var(--color-background)]
+                rounded-[var(--radius-md)] border border-[var(--color-border)]
+                bg-[var(--input-bg)]
                 p-[var(--spacing-3)]
                 sm:flex-row sm:items-center sm:gap-[var(--spacing-3)]
                 sm:p-[var(--input-padding-y)]
@@ -52,7 +52,7 @@ function JobSearchBar({
             <div
                 className="
                     flex min-w-0 flex-1 items-center gap-[var(--spacing-component-md)]
-                    rounded-[var(--input-radius)] bg-[var(--input-bg)]
+                    rounded-[var(--input-radius)] bg-[var(--color-background)]
                     px-[var(--input-padding-x)] py-[var(--input-padding-y)]
                     transition-colors duration-200
                     focus-within:ring-2
@@ -72,19 +72,6 @@ function JobSearchBar({
 
                 {/* Input and label */}
                 <div className="flex min-w-0 flex-1 flex-col gap-1">
-                    <label
-                        htmlFor="job-search-input"
-                        className="
-                            cursor-text text-[var(--font-size-label-sm)]
-                            font-[var(--font-weight-semibold)] uppercase
-                            leading-[var(--line-height-label-sm)]
-                            tracking-[var(--letter-spacing-label-sm)]
-                            text-[var(--color-text-primary)]
-                        "
-                    >
-                        Cargo, habilidad o keyword
-                    </label>
-
                     <input
                         id="job-search-input"
                         name="search"
