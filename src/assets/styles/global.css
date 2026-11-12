@@ -1,0 +1,32 @@
+@import "./_variables.css";
+
+/* =========================================================
+   GLOBAL BASE STYLES
+   ========================================================= */
+
+html {
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body-md);
+  line-height: var(--line-height-body-md);
+
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+}

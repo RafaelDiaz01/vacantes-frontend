@@ -1,24 +1,29 @@
 # Vacantes Frontend
 
-Aplicación Frontend para el proyecto Vacantes.
+Frontend application for the Vacantes project.
 
-## Tecnologías
+## Technologies
 
 - React
 - Vite
 - Tailwind CSS
 - JavaScript
-- Git y GitHub
+- Git and GitHub
 
-## Requisitos
+## Requirements
 
-- Node.js en una versión compatible con Vite.
+- Node.js in a version compatible with Vite.
 - npm.
 
-## Instalación
+## Installation
 
-Clonar el repositorio e ingresar a su directorio:
+Clone the repository and enter its directory:
 
 ```bash
 git clone https://github.com/RafaelDiaz01/vacantes-frontend.git
 cd vacantes-frontend
+```
+
+## Language Policy
+
+All code, commits, comments, and any other text contributions (such as pull request descriptions, issues, documentation, and code comments) **must be written in English**. This ensures consistency and facilitates collaboration across the project.
