@@ -1,10 +1,9 @@
 import { useEffect, useRef } from "react";
 import Close from "@mui/icons-material/Close";
 import Verified from "@mui/icons-material/Verified";
-import WorkOutline from "@mui/icons-material/WorkOutline";
+import WorkOutline from "@mui/icons-material/WorkOutlineOutlined";
 import LocationOnOutlined from "@mui/icons-material/LocationOnOutlined";
 import PaymentsOutlined from "@mui/icons-material/PaymentsOutlined";
-import PersonOutline from "@mui/icons-material/PersonOutline";
 import EmailOutlined from "@mui/icons-material/EmailOutlined";
 import PhoneOutlined from "@mui/icons-material/PhoneOutlined";
 import LanguageOutlined from "@mui/icons-material/LanguageOutlined";
@@ -12,7 +11,7 @@ import ArrowBack from "@mui/icons-material/ArrowBack";
 import ArrowForward from "@mui/icons-material/ArrowForward";
 import WorkOffOutlined from "@mui/icons-material/WorkOffOutlined";
 
-import { VACANCY_DATA } from "../../data/vacanteData";
+import { VACANCY_DATA } from "../../../data/vacancies.js";
 import {
   Section,
   KeyDetail,
@@ -22,7 +21,7 @@ import {
   ContactRow,
   bodyTextStyle,
   getIconSize,
-} from "./VacancyAtoms";
+} from "./VacanciesAtoms.jsx";
 
 const baseButton =
   "inline-flex h-[var(--button-height-default)] w-full cursor-pointer items-center justify-center gap-2 rounded-[var(--radius-button)] px-[var(--button-padding-x)] sm:h-[var(--button-height-compact)] sm:w-auto " +
