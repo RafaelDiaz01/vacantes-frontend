@@ -1,6 +1,6 @@
 // Reemplazar por los datos de la API cuando el backend esté listo.
 
-export const MOCK_VACANCIES = [
+export const VACANCY_DATA = [
   {
     id: 1,
     title: "Senior Frontend Engineer React / Next.js",
