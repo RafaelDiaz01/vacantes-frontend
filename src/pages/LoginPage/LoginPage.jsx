@@ -1,10 +1,10 @@
 import { useState } from "react";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 // Import components located in the same LoginPage folder
-import InputField, { LogoBrand } from "./InputField";
+import InputField, { LogoBrand } from "./InputFiled.jsx";
 
 // Main Login Page View Component
 export default function LoginPage() {
@@ -21,24 +21,16 @@ export default function LoginPage() {
 
   return (
     <div className="flex min-h-screen flex-col justify-between bg-[var(--color-background)] font-[family-name:var(--font-family-base)]">
-      {/* Top Header Navigation Bar */}
-      <header className="flex h-16 items-center border-b border-[color:var(--color-border)] bg-[var(--color-surface)] px-6 lg:px-[var(--layout-margin)]">
-        <LogoBrand iconSize={18} containerSize="size-8" />
-      </header>
-
       {/* Main Form Content Area */}
       <main className="flex flex-1 items-center justify-center p-4 sm:p-6">
         <div className="w-full max-w-[480px] rounded-[var(--radius-modal)] border border-[color:var(--color-border)] bg-[var(--color-surface)] p-6 shadow-[var(--shadow-hover)] sm:p-10">
           {/* Card Header with Brand and Badge */}
           <div className="flex items-center justify-between mb-6">
             <LogoBrand iconSize={20} containerSize="size-9" />
-            <span className="rounded-[var(--badge-radius)] bg-[var(--color-primary-light)] px-3 py-1 text-[length:var(--font-size-label-sm)] font-[number:var(--font-weight-medium)] text-[color:var(--color-primary)]">
-              Acceso Candidatos
-            </span>
           </div>
 
           {/* Section Titles */}
-          <div className="mb-6">
+          <div className="mb-10">
             <h1 className="text-[length:var(--font-size-headline-md)] font-[number:var(--font-weight-bold)] leading-[var(--line-height-headline-md)] text-[color:var(--color-text-primary)]">
               Inicia sesión en tu cuenta
             </h1>
@@ -58,7 +50,7 @@ export default function LoginPage() {
               placeholder="ejemplo@empresa.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              icon={MailOutlineIcon}
+              icon={MailOutlinedIcon}
             />
 
             <InputField
@@ -98,52 +90,8 @@ export default function LoginPage() {
               <ArrowForwardIcon sx={{ fontSize: 18 }} />
             </button>
           </form>
-
-          {/* Legal and Terms Links */}
-          <p className="mt-8 text-center text-[length:var(--font-size-body-sm)] text-[color:var(--color-text-muted)]">
-            Al iniciar sesión, aceptas nuestros{" "}
-            <a
-              href="#terms"
-              className="text-[color:var(--color-text-muted)] underline hover:text-[color:var(--color-primary)]"
-            >
-              Términos de Servicio
-            </a>{" "}
-            y{" "}
-            <a
-              href="#privacy"
-              className="text-[color:var(--color-text-muted)] underline hover:text-[color:var(--color-primary)]"
-            >
-              Política de Privacidad
-            </a>
-            .
-          </p>
         </div>
       </main>
-
-      {/* Bottom Page Footer */}
-      <footer className="flex flex-col items-center justify-between gap-4 border-t border-[color:var(--color-border)] bg-[var(--color-surface)] px-6 py-4 text-[length:var(--font-size-body-sm)] text-[color:var(--color-text-muted)] sm:flex-row lg:px-[var(--layout-margin)]">
-        <div>© 2025 VacantesApp. Todos los derechos reservados.</div>
-        <div className="flex gap-6">
-          <a
-            href="#terms"
-            className="hover:text-[color:var(--color-text-primary)] transition-colors"
-          >
-            Términos de servicio
-          </a>
-          <a
-            href="#privacy"
-            className="hover:text-[color:var(--color-text-primary)] transition-colors"
-          >
-            Privacidad
-          </a>
-          <a
-            href="#support"
-            className="hover:text-[color:var(--color-text-primary)] transition-colors"
-          >
-            Soporte
-          </a>
-        </div>
-      </footer>
     </div>
   );
 }
